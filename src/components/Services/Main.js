@@ -47,16 +47,16 @@ export default function Main() {
                 </div>
             </div>
 
-            <div className="mx-auto my-20">
+            <div className="mx-auto my-20 md:grid grid-cols-2">
                 {services.map((service) => (
-                    <div className="w-full mx-auto my-10 md:w-1/2 relative">
+                    <div className="w-full mx-auto my-10 md:w-3/4 relative">
                             <img 
                             src={service.imageDuService.fluid.src}
                             loading="lazy"
                             placeholder="blurred"
                             className="mx-auto relative inset-0 bg-cover bg-center z-0 filter brightness-50"
                             />
-                            <h1 className="absolute w-90 mx-auto mt-14 inset-0 flex justify-center items-center text-white text-3xl font-semibold z-10"> {service.nomDuService} </h1>
+                            <h1 className="absolute w-90 mx-auto mt-14 inset-0 flex justify-center items-center text-white text-2xl font-semibold z-10"> {service.nomDuService} </h1>
                     </div>
                 ))}
             </div>
