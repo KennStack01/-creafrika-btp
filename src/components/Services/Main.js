@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { IoIosDownload } from 'react-icons/io'
-import { StaticImage } from "gatsby-plugin-image"
 
 
 export default function Main() {
@@ -36,7 +35,7 @@ export default function Main() {
                 du changement architectural apportée dans cette communauté.
             </p>
 
-            <div className="transform transition duration-500 hover:scale-110 my-14">
+            <div className="my-14">
                 <div className="flex flex-row mx-auto w-80 p-2 bg-curious-blue-500 font-medium py-4 md:py-2 text-lg hover:bg-curious-blue-600 text-white my-14">
                     <h1 className="my-auto ml-5">
                         Nos Prestations de Service
