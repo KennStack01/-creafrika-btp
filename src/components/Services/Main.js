@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { IoIosDownload } from 'react-icons/io'
+import { Link } from 'gatsby'
 
 
 export default function Main() {
@@ -37,7 +38,7 @@ export default function Main() {
 
             <div className="my-14">
                 <div className="flex flex-row mx-auto w-80 p-2 bg-curious-blue-500 font-medium py-4 md:py-2 text-lg text-white my-14">
-                    <h1 className="my-auto ml-5">
+                    <h1 className="my-auto ml-5 font-semibold">
                         Nos Prestations de Service
                     </h1>
                     <div className="text-white text-3xl my-auto" >
@@ -58,6 +59,11 @@ export default function Main() {
                             <h1 className="absolute w-90 mx-auto mt-14 inset-0 flex justify-center items-center text-white text-2xl font-semibold z-10"> {service.nomDuService} </h1>
                     </div>
                 ))}
+            </div>
+            <div className="mt-8 mb-10 transform transition duration-500 hover:scale-110 my-12">
+                <Link to="/projects" className="p-3 bg-curious-blue-500 font-semibold py-4 md:py-2 px-3 text-2xl hover:bg-curious-blue-600 text-white my-20">
+                    Découvrir nos Projets
+                </Link>
             </div>
         </div>
     )
