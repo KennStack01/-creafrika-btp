@@ -8,7 +8,7 @@ export default function Main() {
 
     const data = useStaticQuery(graphql`
         query MyQuery {
-            allContentfulService {
+            allContentfulService(sort: {fields: createdAt}) {
                 edges {
                     node {
                         nomDuService

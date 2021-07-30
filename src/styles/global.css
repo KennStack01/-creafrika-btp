@@ -11,7 +11,7 @@ html {
 /* Add font family poppins on mobile version*/
 @media (max-width: 600px) {
   html {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Poppins" !important;
   }
 }
 
