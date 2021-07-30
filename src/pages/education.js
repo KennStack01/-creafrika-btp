@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 const Education = () => {
     return (
         <Layout>
-            <Seo title="Services" description="Creafrica BTP, Découvrir vos Services"/>
+            <Seo title="Education" description="Creafrica BTP, Découvrir Nos formations"/>
 
         </Layout>
     )

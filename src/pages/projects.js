@@ -1,14 +1,15 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Main from "../components/Projects/Main"
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" description="Creafrica BTP, Cabinet d’architecture et de Génie-civil"/>
-      <Main/>
-  </Layout>
-)
+const Projects = () => {  
+  return (
+    <Layout>
+      <Seo title="Project" description="Creafrica BTP, Découvrir les Projets"/>
+      {/* <Main/> */}
+    </Layout>
+  )
+}
 
-export default IndexPage
+export default Projects

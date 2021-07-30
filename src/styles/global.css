@@ -2,3 +2,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  /* Add font family poppins */
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Add font family poppins on mobile version*/
+@media (max-width: 600px) {
+  html {
+    font-family: "Poppins", sans-serif !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #05181f;
+}
+
+/* Fit the width size */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
