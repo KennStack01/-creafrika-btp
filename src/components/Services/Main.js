@@ -36,7 +36,7 @@ export default function Main() {
             </p>
 
             <div className="my-14">
-                <div className="flex flex-row mx-auto w-80 p-2 bg-curious-blue-500 font-medium py-4 md:py-2 text-lg hover:bg-curious-blue-600 text-white my-14">
+                <div className="flex flex-row mx-auto w-80 p-2 bg-curious-blue-500 font-medium py-4 md:py-2 text-lg text-white my-14">
                     <h1 className="my-auto ml-5">
                         Nos Prestations de Service
                     </h1>
