@@ -28,7 +28,7 @@ export default function Main() {
 
     return (
         <div className="">
-            <h1 className="text-4xl md:text-5xl font-semibold mx-2 text-gray-600 mt-16">Vous satisfaire est notre Priorité Première</h1>
+            <h1 className="text-4xl md:text-5xl font-semibold mx-2 text-gray-600 mt-16">Vous satisfaire est notre priorité première</h1>
             <p className="text-justify md:text-xl md:text-center mx-5 my-8 md:mx-40">
                 Le changement peut ne pas apporter de croissance 
                 mais il n'y a pas de croissance sans changement : 
@@ -49,7 +49,7 @@ export default function Main() {
 
             <div className="mx-auto my-20">
                 {services.map((service) => (
-                    <div className="w-full mx-auto md:w-1/2 relative">
+                    <div className="w-full mx-auto my-10 md:w-1/2 relative">
                             <img 
                             src={service.imageDuService.fluid.src}
                             loading="lazy"
