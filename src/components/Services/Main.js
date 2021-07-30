@@ -1,7 +1,8 @@
 import React from 'react'
-import { IoDownload } from 'react-icons/io'
+// import { IoDownload } from 'react-icons/io'
+import { IoIosDownload } from 'react-icons/io'
 
-const Main = () => {
+export default function Main() {
     return (
         <div>
             <h1 className="text-4xl md:text-5xl font-semibold mx-2 text-gray-600">Vous satisfaire est notre Priorité Première</h1>
@@ -14,9 +15,11 @@ const Main = () => {
 
             <div className="transform transition duration-500 hover:scale-110 my-14">
                 <div className="flex flex-row mx-auto w-72 p-2 bg-curious-blue-500 font-medium py-4 md:py-2 text-lg hover:bg-curious-blue-600 text-white my-14">
-                    Rencontrer notre équipe
-                    <div className="text-white text-3xl" >
-                        <IoDownload/>
+                    <h1 className="my-auto ml-3">
+                        Rencontrer notre équipe
+                    </h1>
+                    <div className="text-white text-3xl my-auto" >
+                        <IoIosDownload/>
                     </div>
                 </div>
             </div>
@@ -24,4 +27,4 @@ const Main = () => {
     )
 }
 
-export default Main
+// export default Main

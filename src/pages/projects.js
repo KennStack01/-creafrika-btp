@@ -3,13 +3,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Main from "../components/Projects/Main"
 
-const Projects = () => {  
+
+export default function Projects() {  
   return (
     <Layout>
       <Seo title="Project" description="Creafrica BTP, Découvrir les Projets"/>
-      {/* <Main/> */}
+      <Main/>
     </Layout>
   )
 }
 
-export default Projects
+// export default Projects
