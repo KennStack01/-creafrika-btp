@@ -47,41 +47,16 @@ export default function Main() {
                 </div>
             </div>
 
-            {/* Les Services */}
             <div className="mx-auto my-20">
                 {services.map((service) => (
                     <div className="w-full mx-auto md:w-1/2 relative">
-                        {/* <h1 className=" text-xl font-semibold z-10"> {service.nomDuService} </h1> */}
-                        {/* <StaticImage
-                            src={`${service.imageDuService.fluid.src}`}
-                            width={300}
-                            quality={95}
-                            placeholder="blurred"
-                            layout="fixed"
-                            formats={["AUTO", "WEBP", "AVIF"]}
-                            alt={service.imageDuService.description}
-                            className="relative"
-                        /> */}
-
                             <img 
                             src={service.imageDuService.fluid.src}
-                            // width={"50px"}
                             loading="lazy"
                             placeholder="blurred"
                             className="mx-auto relative inset-0 bg-cover bg-center z-0 filter brightness-50"
                             />
-                            {/* <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/3/3c/JumanjiTheNextLevelTeaserPoster.jpg')"></div> */}
                             <h1 className="absolute w-90 mx-auto mt-14 inset-0 flex justify-center items-center text-white text-3xl font-semibold z-10"> {service.nomDuService} </h1>
-                            {/* <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-6xl text-white font-semibold">Dwayne</div> */}
-
-
-                        {/* <img 
-                            src={service.imageDuService.fluid.src}
-                            width={400}
-                            loading="lazy"
-                            placeholder="blurred"
-                            className="relative"
-                        /> */}
                     </div>
                 ))}
             </div>
