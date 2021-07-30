@@ -31,12 +31,14 @@ const Main = () => {
             </div>
             
             <div className="transform transition duration-500 hover:scale-110 my-14">
-                <Link to="/Contact" className="flex flex-row mx-auto w-72 p-2 bg-curious-blue-500 font-medium py-4 md:py-2 text-lg hover:bg-curious-blue-600 text-white my-14">
-                    Rencontrer notre équipe
-                    <div className="text-white text-3xl" >
+                <div className="flex flex-row mx-auto w-72 p-2 bg-curious-blue-500 font-medium py-4 md:py-2 text-lg hover:bg-curious-blue-600 text-white my-14">
+                    <h1 className="my-auto ml-3">
+                        Rencontrer notre équipe
+                    </h1>
+                    <div className="text-white text-3xl my-auto" >
                         <BiDoorOpen/>
                     </div>
-                </Link>
+                </div>
             </div>
 
         </div>
