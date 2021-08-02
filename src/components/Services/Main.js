@@ -30,10 +30,7 @@ export default function Main() {
         <div className="">
             <h1 className="text-4xl md:text-5xl font-semibold mx-2 text-gray-600 mt-16">Vous satisfaire est notre priorité première</h1>
             <p className="text-justify md:text-xl md:text-center mx-5 my-8 md:mx-40">
-                Le changement peut ne pas apporter de croissance 
-                mais il n'y a pas de croissance sans changement : 
-                La croissance d’une civilisation dépend aussi 
-                du changement architectural apportée dans cette communauté.
+                Nous proposons une conception sur mesure basée sur les exigences uniques du client, combinées à une rigueur intellectuelle et une intuition sensuelle, associées à une sensibilité aux problèmes sociaux et contextuels plus larges.
             </p>
 
             <div className="my-14">
