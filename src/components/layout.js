@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
 
   return (
       <div className={styles.layoutContent} style={ { fontFamily: "Gontserrat" } }>
-          <div className="sticky top-0 z-50">
+          <div className="top-0 z-50">
             <Header />
           </div>
           <main className={styles.children}>
