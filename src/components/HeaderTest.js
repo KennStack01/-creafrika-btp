@@ -8,7 +8,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 const navigation = [
-    { name: 'Accueil', route: '/', current: true },
+    { name: 'Accueil', route: '/', current: false },
     { name: 'Services', route: '/services', current: false },
     { name: 'Projects', route: '/projects', current: false },
     { name: 'Education', route: '/education', current: false },
@@ -25,9 +25,9 @@ function classNames(...classes) {
 
 export default function HeaderTest() {
     return (
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-white shadow-sm backdrop-filter backdrop-blur-lg pt-2 sticky top-0 z-10">
         {({ open }) => (
-            <div className="backdrop-filter backdrop-blur-lg sticky top-0 z-10 shadow-sm">
+            <>
                 <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                     <div className="relative flex items-center justify-between h-16">
                     <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -60,8 +60,8 @@ export default function HeaderTest() {
                                     key={item.name}
                                     to={item.route}
                                     className={classNames(
-                                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                    'p-3 rounded-md text-sm font-medium'
+                                    item.current ? 'bg-white text-gray-600' : 'text-gray-900 hover:text-curious-blue-500',
+                                    'py-3 px-8 text-sm font-semibold'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
                                     activeStyle={activeLinkStyles} 
@@ -83,8 +83,8 @@ export default function HeaderTest() {
                         key={item.name}
                         to={item.route}
                         className={classNames(
-                            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                            'block p-3 rounded-md text-base font-medium'
+                            item.current ? 'bg-white text-gray-600' : 'text-gray-900 hover:text-curious-blue-500',
+                            'block py-3 px-8 rounded-md text-base font-semibold'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                         activeStyle={activeLinkStyles} 
@@ -95,7 +95,7 @@ export default function HeaderTest() {
                     ))}
                     </div>
                 </Disclosure.Panel>
-            </div>
+            </>
         )}
         </Disclosure>
     )
