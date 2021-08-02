@@ -15,6 +15,10 @@ const navigation = [
     { name: 'Contact', route: '/contact', current: false },
 ]
 
+const activeLinkStyles = { color: "white", backgroundColor: "#239FCD", cursor: "pointer", paddingTop: "", paddingBottom: "", paddingLeft: "", paddingRight: "" }
+
+
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
@@ -57,9 +61,11 @@ export default function HeaderTest() {
                                     to={item.route}
                                     className={classNames(
                                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                    'px-3 py-2 rounded-md text-sm font-medium'
+                                    'p-3 rounded-md text-sm font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
+                                    activeStyle={activeLinkStyles} 
+                                    activeClassName="active"
                                 >
                                     {item.name}
                                 </Link>
@@ -78,9 +84,11 @@ export default function HeaderTest() {
                         to={item.route}
                         className={classNames(
                             item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                            'block px-3 py-2 rounded-md text-base font-medium'
+                            'block p-3 rounded-md text-base font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
+                        activeStyle={activeLinkStyles} 
+                        activeClassName="active"
                         >
                         {item.name}
                         </Link>
