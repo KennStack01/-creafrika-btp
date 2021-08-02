@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import HeaderTest from './HeaderTest'
-// import { RiMenu3Fill } from 'react-icons/ri'
 
 
 const Header = () => {
