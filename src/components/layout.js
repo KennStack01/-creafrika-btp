@@ -15,7 +15,7 @@ import Header from "./header"
 
 const styles = {
     layoutContent: 'text-center flex flex-col h-screen',
-    children: 'flex-grow z-0',
+    children: 'flex-grow z-0 relative',
 }
 
 const Layout = ({ children }) => {
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
 
   return (
       <div className={styles.layoutContent} style={ { fontFamily: "Gontserrat" } }>
-          <Header />
+          <Header className="absolute z-50" />
           <main className={styles.children}>
             { children }
           </main>

@@ -8,7 +8,7 @@ import HeaderTest from './HeaderTest'
 
 const Header = () => {
   return (
-    <div className="">
+    <div className="bg-white shadow-sm backdrop-filter backdrop-blur-lg pt-1 sticky top-0 z-10">
 
       <HeaderTest/>
       {/* <div className="flex flex-row justify-between shadow-sm backdrop-filter backdrop-blur-lg pt-2 sticky top-0 z-10">
