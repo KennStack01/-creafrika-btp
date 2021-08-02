@@ -28,7 +28,7 @@ export default function HeaderTest() {
         <Disclosure as="nav" className="">
         {({ open }) => (
             <>
-                <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 z-50">
                     <div className="relative flex items-center justify-between h-16">
                     <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                         {/* Mobile menu button*/}
@@ -78,21 +78,21 @@ export default function HeaderTest() {
 
                 <Disclosure.Panel className="sm:hidden">
                     <div className="px-2 pt-2 pb-3 space-y-1">
-                    {navigation.map((item) => (
-                        <Link
-                        key={item.name}
-                        to={item.route}
-                        className={classNames(
-                            item.current ? 'bg-white text-gray-600' : 'text-gray-900 hover:text-curious-blue-500',
-                            'block py-3 px-8 rounded-md text-base font-semibold'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                        activeStyle={activeLinkStyles} 
-                        activeClassName="active"
-                        >
-                        {item.name}
-                        </Link>
-                    ))}
+                        {navigation.map((item) => (
+                            <Link
+                            key={item.name}
+                            to={item.route}
+                            className={classNames(
+                                item.current ? 'bg-white text-gray-600' : 'text-gray-900 hover:text-curious-blue-500',
+                                'block py-3 px-8 rounded-md text-base font-semibold'
+                            )}
+                            aria-current={item.current ? 'page' : undefined}
+                            activeStyle={activeLinkStyles} 
+                            activeClassName="active"
+                            >
+                            {item.name}
+                            </Link>
+                        ))}
                     </div>
                 </Disclosure.Panel>
             </>
