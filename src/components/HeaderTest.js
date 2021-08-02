@@ -76,7 +76,7 @@ export default function HeaderTest() {
                     </div>
                 </div>
 
-                <Disclosure.Panel className="sm:hidden">
+                <Disclosure.Panel className="sm:hidden z-50">
                     <div className="px-2 pt-2 pb-3 space-y-1">
                         {navigation.map((item) => (
                             <Link
