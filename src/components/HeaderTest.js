@@ -1,9 +1,9 @@
 /* This example requires Tailwind CSS v2.0+ */
 import React from 'react'
 import { Link } from 'gatsby'
-import { Fragment } from 'react'
+// import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+// import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { CgMenuCheese, CgClose } from 'react-icons/cg'
 import { StaticImage } from "gatsby-plugin-image"
 
