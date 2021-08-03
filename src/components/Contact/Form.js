@@ -2,25 +2,25 @@ import React from 'react'
 
 const Form = () => {
     return (
-        <div>
+        <div className="text-gray-600">
             <h1 className="text-2xl font-semibold mt-3"> 
-                <span className="bg-turbo-500">Here we Gooooo! </span> 🚀 
+                <span className="bg-turbo-500">Ecrivez-nous </span> 👔
             </h1>
             <div className="flex items-center w-full">
-                <div class="w-full bg-gray-100 rounded shadow p-8 m-4 md:max-w-sm md:mx-auto">
+                <div class="w-full bg-white rounded shadow p-8 m-4 md:max-w-sm md:mx-auto">
                     <form class="mb-4 md:flex md:flex-wrap md:justify-between"  method="post" action={`https://getform.io/f/09c7f2c7-1e46-443f-baf0-bb394a33cb78`}>
                         <div class="flex flex-col mb-4 md:w-full">
-                            <label className="mb-2 tracking-wide font-bold text-lg text-grey-darkest" for="first_name">Full Name</label>
+                            <label className="mb-2 tracking-wide font-bold text-lg text-grey-darkest" for="first_name">Votre Nom Complet</label>
                             <input className="border py-2 px-3 text-grey-darkest focus:outline-none focus:ring-2 focus:ring-turbo-600 focus:ring-opacity-50" type="text" name="first_name" id="first_name" placeholder="Kenn Stack" required/>
                         </div>
                         <div class="flex flex-col mb-4 md:w-full">
-                            <label className="mb-2 font-bold text-lg text-grey-darkest" for="email">Email</label>
+                            <label className="mb-2 font-bold text-lg text-grey-darkest" for="email">Adresse e-mail</label>
                             <input className="border py-2 px-3 text-grey-darkest focus:outline-none focus:ring-2 focus:ring-turbo-600 focus:ring-opacity-50" type="email" name="email" id="email"  placeholder="kennstack@gmail.com" required/>
                         </div>
-                        <div class="flex flex-col mb-4 md:w-full">
-                            <label className="mb-2 tracking-wide font-bold text-lg text-grey-darkest" for="business_name">Business Name</label>
+                        {/* <div class="flex flex-col mb-4 md:w-full">
+                            <label className="mb-2 tracking-wide font-bold text-lg text-grey-darkest" for="business_name">Votre Entreprise</label>
                             <input className="border py-2 px-3 text-grey-darkest focus:outline-none focus:ring-2 focus:ring-turbo-600 focus:ring-opacity-50" type="text" name="business_name" id="business_name" placeholder="Modern Shop Company"/>
-                        </div>
+                        </div> */}
                         <div class="flex flex-col mb-4 md:w-full">
                             <div class="mt-4">
                                 <span class="mb-2 font-bold text-lg text-grey-darkest">Project Type</span>
