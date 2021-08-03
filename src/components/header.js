@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
-import HeaderTest from './HeaderTest'
+import HeaderTest from './NavMenu'
 
 
 const Header = () => {
