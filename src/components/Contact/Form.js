@@ -19,7 +19,7 @@ const Form = () => {
                         </div>
                         <div class="flex flex-col mb-4 md:w-full">
                             <label className="mb-2 font-bold text-lg text-grey-darkest" for="phone">Numéro de Téléphone</label>
-                            <input className="border py-2 px-3 text-grey-darkest focus:outline-none focus:ring-2 focus:ring-turbo-600 focus:ring-opacity-50" type="tel" id="phone" name="phone"  placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
+                            <input className="border py-2 px-3 text-grey-darkest focus:outline-none focus:ring-2 focus:ring-turbo-600 focus:ring-opacity-50" type="tel" id="phone" name="phone"  placeholder="123-45-678" required/>
                         </div>
                         {/* <div class="flex flex-col mb-4 md:w-full">
                             <label className="mb-2 tracking-wide font-bold text-lg text-grey-darkest" for="business_name">Votre Entreprise</label>
