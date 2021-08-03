@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
           <main className={styles.children}>
             { children }
           </main>
-          <footer className="text-xs text-white bg-turbo-500 w-full h-4 pb-2 bg-curious-blue-800 mt-20">
+          <footer className="text-xs text-white bg-turbo-500 w-full h-4 bg-curious-blue-800 mt-20">
               © {new Date().getFullYear()}, Creafrika Group | Built with  
               {` `}
             💖 by <a href="https://www.webcontract.io" target="_blank" rel="noreferrer" className="font-medium border-blue-20 border-b-2 hover:border-turbo-900"> Kenn Kibadi </a>
