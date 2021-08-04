@@ -48,9 +48,11 @@ export default function Main() {
             </div>
 
             {/* Project List */}
-            <div>
+            <div className="grid grid-cols-1 md:grid-cols-3">
                 {projects.map(project => (
-                    <Project key={project.slug} picture={project.imagePrincipale.file.url} name={project.nomDuProjet} location={project.localisation} slug={project.slug} />
+                    <div>
+                        <Project key={project.slug} picture={project.imagePrincipale.file.url} name={project.nomDuProjet} location={project.localisation} slug={project.slug} />
+                    </div>
                 ))}
             </div>
 
