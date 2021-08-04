@@ -11,14 +11,16 @@ export default function Main() {
 
             <div className="my-14">
                 <div className="flex flex-row mx-auto w-80 p-2 bg-curious-blue-500 font-medium py-4 md:py-2 text-lg text-white my-14">
-                    <h1 className="my-auto ml-5 font-semibold">
-                        Nos Prestations de Service
-                    </h1>
-                    <div className="text-white text-3xl my-auto" >
-                        <IoIosDownload/>
-                    </div>
+                    <p className="my-auto mx-auto flex flex-row font-semibold">
+                        Explorez nos Projets
+                        <div className="text-white text-3xl" >
+                            <IoIosDownload/>
+                        </div>
+                    </p>
                 </div>
             </div>
+
+            {/* Project List */}
         </div>
     )
 }
