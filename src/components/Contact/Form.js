@@ -4,7 +4,7 @@ const Form = () => {
     return (
         <div className="text-gray-600">
             <h1 className="text-2xl font-semibold mt-3"> 
-                <span className="bg-turbo-500">Ecrivez-nous ici </span> 👇
+                <span className="bg-turbo-500">Ecrivez-nous ici</span> 👇
             </h1>
             <div className="flex items-center w-full">
                 <div className="w-full bg-white rounded shadow p-8 m-4 md:max-w-sm md:mx-auto">
