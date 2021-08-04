@@ -1,7 +1,34 @@
 import React from 'react'
 import { IoIosDownload } from 'react-icons/io'
+import { graphql, useStaticQuery } from 'gatsby'
+import Project from './Project'
+
+
 
 export default function Main() {
+
+    const data = useStaticQuery(graphql`
+        query {
+            allContentfulProject {
+                edges {
+                    node {
+                        imagePrincipale {
+                            file {
+                                url
+                            }
+                        }
+                        nomDuProjet
+                        localisation
+                        slug
+                    }
+                }
+            }
+        }
+    `)
+
+    const projects = data.allContentfulProject.edges.map(({node}) => node)
+
+
     return (
         <div>
             <h1 className="text-4xl md:text-5xl font-semibold mx-2 mt-10 text-gray-600">Vous satisfaire est notre Priorité Première</h1>
@@ -21,6 +48,12 @@ export default function Main() {
             </div>
 
             {/* Project List */}
+            <div>
+                {projects.map(project => (
+                    <Project key={project.slug} picture={project.imagePrincipale.file.url} name={project.nomDuProjet} location={project.localisation} slug={project.slug} />
+                ))}
+            </div>
+
         </div>
     )
 }
