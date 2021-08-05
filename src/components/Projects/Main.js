@@ -2,6 +2,7 @@ import React from 'react'
 import { IoIosDownload } from 'react-icons/io'
 import { graphql, useStaticQuery } from 'gatsby'
 import Project from './Project'
+import { Link } from 'gatsby'
 
 
 
@@ -54,6 +55,11 @@ export default function Main() {
                         <Project key={project.slug} picture={project.imagePrincipale.file.url} name={project.nomDuProjet} location={project.localisation} slug={project.slug} />
                     </div>
                 ))}
+            </div>
+            <div className="mt-8 mb-10 transform transition duration-500 hover:scale-110 my-12">
+                <Link to="/contact" className="p-3 bg-curious-blue-500 font-semibold py-4 md:py-2 px-3 text-2xl hover:bg-curious-blue-600 text-white my-20">
+                    Contactez-nous!
+                </Link>
             </div>
 
         </div>
