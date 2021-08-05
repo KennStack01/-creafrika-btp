@@ -19,7 +19,7 @@ const ProjectPageTeamplate = ({ data }) => {
                 placeholder="blurred"
                 className="w-96 md:w-3/4 mx-auto mt-6 rounded md:rounded-lg shadow-md"
             />
-            <div className="flex flex-row justify-between mx-4 md:mx-40 my-3 text-gray-600">
+            <div className="md:flex flex-row justify-between mx-4 md:mx-40 my-3 text-gray-600">
                 <h2> Année: {myProject.dateDuProjet} </h2>
                 <h2> Localisation: {myProject.localisation} </h2>
             </div>

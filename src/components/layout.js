@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-      <div className={styles.layoutContent} style={ { fontFamily: "Gontserrat" } }>
+      <div className={styles.layoutContent} style={ { fontFamily: "Poppins" } }>
           <div className="top-0 z-50">
             <Header />
           </div>
