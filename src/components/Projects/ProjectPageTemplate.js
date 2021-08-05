@@ -23,17 +23,18 @@ const ProjectPageTeamplate = ({ data }) => {
                 <h2> Année: {myProject.dateDuProjet} </h2>
                 <h2> Localisation: {myProject.localisation} </h2>
             </div>
-            <p className="text-gray-700 font-medium md:font-semibold text-justify mx-4 md:mx-36 my-6"> {descriptionProjet.Description} </p>
+            <p className="text-gray-700 font-medium text-justify mx-4 md:mx-36 my-6"> {descriptionProjet.Description} </p>
 
-            <h1 className="mx-auto font-semibold text-xl mt-14 text-gray-800"> En Images... </h1>
+            <h1 className="mx-auto font-semibold text-xl mt-14 text-gray-700"> 🎨 En Images... </h1>
             <div className="mx-auto md:grid grid-cols-3">
                 {myProject.multiplesImages.map((image) => (
                     <img 
                         src={image.file.url} 
                         key={countKeyForPictures++} 
                         alt="Le Projet" 
+                        placeholder="blurred"
                         loading="lazy" 
-                        className="w-96 mx-auto my-3 md:my-5" 
+                        className="w-96 mx-auto my-3 md:my-5 rounded-md" 
                     />
                 ))}
             </div>
