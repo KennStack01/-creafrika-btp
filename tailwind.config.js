@@ -2,10 +2,10 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    fontFamily: {
-       'sans': ['poppins medium', 'montserrat regular'],
-       'serif': [ 'poppins medium', 'montserrat medium'],
-    },
+    // fontFamily: {
+    //    'sans': ['poppins medium', 'montserrat regular'],
+    //    'serif': [ 'poppins medium', 'montserrat medium'],
+    // },
     extend: {
       colors: {
         'curious-blue': {
