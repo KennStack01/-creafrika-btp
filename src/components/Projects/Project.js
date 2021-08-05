@@ -5,7 +5,7 @@ const Project = ({picture, name, location, slug}) => {
     return (
         <div  className="m-5">
             <Link to={`${slug}`}>
-                <div className="w-80 md:w-72 mx-auto pb-2 rounded shadow hover:shadow-lg">
+                <div className="w-80 md:w-80 mx-auto pb-2 rounded shadow hover:shadow-lg">
                     <img 
                         src={picture} 
                         alt="Le Projet" 

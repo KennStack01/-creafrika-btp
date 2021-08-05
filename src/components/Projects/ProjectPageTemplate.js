@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Layout from '../layout'
 
 const ProjectPageTeamplate = ({ data }) => {
 
@@ -8,34 +9,34 @@ const ProjectPageTeamplate = ({ data }) => {
     let countKeyForPictures = 0
 
     return (
-        <div>
-            <h1 className="text-2xl font-semibold"> {myProject.nomDuProjet} </h1>
+        <Layout>
+            <h1 className="text-2xl font-semibold mx-auto mt-10 text-curious-blue-600"> {myProject.nomDuProjet} </h1>
             <img 
                 src={myProject.imagePrincipale.file.url} 
                 alt="Le Projet" 
                 loading="lazy"
                 placeholder="blurred"
-                className=" mx-auto"
+                className="w-96 md:w-3/4 mx-auto mt-6 rounded md:rounded-lg shadow-md"
             />
-            <div>
+            <div className="flex flex-row justify-between mx-4 md:mx-40 my-3 text-gray-600">
                 <h2> Année: {myProject.dateDuProjet} </h2>
                 <h2> Localisation: {myProject.localisation} </h2>
             </div>
-            <p> {descriptionProjet.Description} </p>
+            <p className="text-gray-700 text-justify mx-4 md:mx-36 my-6"> {descriptionProjet.Description} </p>
 
             <h1 className="mx-auto font-semibold text-xl"> En Images... </h1>
-            <div>
+            <div className="mx-auto md:grid grid-cols-3">
                 {myProject.multiplesImages.map((image) => (
                     <img 
                         src={image.file.url} 
                         key={countKeyForPictures++} 
                         alt="Le Projet" 
                         loading="lazy" 
-                        className="" 
+                        className="w-96 m-4" 
                     />
                 ))}
             </div>
-        </div>
+        </Layout>
     )
 }
 
