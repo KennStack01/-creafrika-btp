@@ -8,9 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link } from 'gatsby'
 import Header from "./header"
-// import "./layout.css"
 
 
 const styles = {
@@ -30,7 +28,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-      <div className={styles.layoutContent} style={ { fontFamily: "Poppins" } }>
+      <div className={styles.layoutContent} style={ { fontFamily: "Poppins" || "montserrat" || "Gontserrat" } }>
           <div className="top-0 z-50">
             <Header />
           </div>
